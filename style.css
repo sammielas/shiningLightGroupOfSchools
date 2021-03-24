@@ -12,8 +12,6 @@
    font-family: 'Source Sans Pro', sans-serif;
  }
 
-
-
  .header {
    min-height: 100vh;
    width: 100%;
@@ -22,6 +20,7 @@
    background-size: cover;
    position: relative;
  }
+
 
  nav {
    display: flex;
@@ -33,6 +32,8 @@
  nav img {
    width: 150px;
  }
+
+
 
  .nav-links {
    flex: 1;
@@ -213,6 +214,7 @@
    margin: auto;
    text-align: center;
    padding-top: 100px;
+
  }
 
  .facilities-col {
@@ -220,12 +222,19 @@
    border-radius: 10px;
    margin-bottom: 5%;
    text-align: left;
+
  }
 
  .facilities-col img {
    width: 100%;
    border-radius: 10px;
+   transition: 0.4s;
  }
+
+ .facilities img:hover {
+   box-shadow: 4px 4px 2px 0px rgba(31, 0, 18, 0.604)
+ }
+
 
  .facilities-col p {
    padding: 0;
@@ -286,6 +295,7 @@
    padding: 100px 0;
  }
 
+
  .cta h1 {
    color: #fff;
    margin-bottom: 40px;
@@ -344,7 +354,14 @@
 
  .about-col img {
    width: 100%;
+   cursor: pointer;
+   transition: 0.4s
  }
+
+ .about-col img:hover {
+   box-shadow: 4px 4px 2px 0px rgba(31, 0, 18, 0.604)
+ }
+
 
  .about-col h1 {
    padding-top: 0;
@@ -362,6 +379,81 @@
 
  .red-btn:hover {
    color: #fff;
+ }
+
+ /* blog content */
+ .blog-content {
+   width: 80%;
+   margin: auto;
+   padding: 60px 0;
+ }
+
+ .blog-left {
+   flex-basis: 65%;
+ }
+
+ .blog-left img {
+   width: 100%;
+ }
+
+ .blog-left img:hover {
+   box-shadow: 4px 4px 2px 0px rgba(31, 0, 18, 0.604)
+ }
+
+
+ .blog-left h2 {
+   color: #222;
+   font-weight: 600;
+   margin: 30px 0;
+ }
+
+ .blog-left p {
+   color: #999;
+   padding: 0;
+ }
+
+ .blog-right {
+   flex-basis: 32%;
+ }
+
+ .blog-right h3 {
+   background: #E91E63;
+   color: #fff;
+   padding: 7px 0;
+   font-size: 16px;
+   margin-bottom: 20px;
+ }
+
+ .blog-right div {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-bottom: 8px;
+   color: #555;
+ }
+
+ .comment-box {
+   border: 1px solid #ccc;
+   margin: 50px 0;
+   padding: 10px 20px;
+ }
+
+ .comment-box h3 {
+   text-align: left;
+ }
+
+ .comment-form input,
+ .comment-form textarea {
+   width: 100%;
+   padding: 10px;
+   margin: 15px 0;
+   border: none;
+   outline: none;
+   background: #f0f0f0;
+ }
+
+ .comment-form button {
+   margin: 10px 0;
  }
 
  /* Media Query */
@@ -416,6 +508,10 @@
    }
 
    .cta h1 {
+     font-size: 24px;
+   }
+
+   .sub-header h1 {
      font-size: 24px;
    }
 
